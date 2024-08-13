@@ -11,6 +11,7 @@
   --header-font: "Playfair Display", serif;
 }
 
+
 .dropdown-content.show {
   display: block;
 }
@@ -115,6 +116,17 @@
   cursor: pointer;
 }
 
+.btn a{
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 .btn_vid{
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -181,6 +193,12 @@ video {
 }
 
 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited{
+  color: inherit;
   text-decoration: none;
 }
 
@@ -507,6 +525,140 @@ nav {
   color: var(--text-light);
 }
 
+
+/*   CSSS PAKET HARGA    */
+/* PAKET HARGA */
+
+.cont_utama{
+  background-color: var(--extra-light);
+}
+
+.p_utm{
+  margin-bottom: 0.5rem;
+  font-size: 1rem; 
+  font-weight: 500;
+  color: var(--primary-color);
+  text-align: center;
+  padding-top: 40px;
+}
+
+.h_utm{
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+
+.bagan_utama {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 5px 5px 50px 5px;
+}
+
+.bagan {
+  background-color: var(--white);
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10px;
+  position: relative;
+  width: 30%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.next {
+  right: 15px;
+  border-radius: 5px 0 0 5px;
+}
+
+.prev {
+  left: 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.caption-bagan {
+  text-align: center;
+  padding: 10px 0;
+}
+
+.caption-bagan p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.row {
+  column-count: 3;
+  column-gap: 10px;
+}
+
+.column {
+  break-inside: avoid-column;
+}
+
+.demo {
+  opacity: 0.6;
+  cursor: pointer;
+  height: auto;
+  margin: 5px;
+  width: 100%;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+/* CSS PAKET HARGA */
+
 .menu {
   background-color: var(--extra-light);
 }
@@ -638,6 +790,39 @@ nav {
   color: var(--text-light);
 }
 
+/*   PANAH ATAS   */
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px; 
+  right: 20px; 
+  display: none;
+  background-color: var(--primary-color);
+  color: var(--secondary-color); 
+  border: none;
+  border-radius: 50%; 
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease; 
+  z-index: 100; 
+}
+
+.back-to-top:hover {
+  background-color: var(--secondary-color); 
+  color: var(--primary-color);
+}
+
+.back-to-top i {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+/*   END PANAH ATAS   */
+
+
+/*   FOOTER   */
+
 .footer {
   background-color: var(--primary-color);
 }
@@ -735,6 +920,9 @@ nav {
   text-align: center;
 }
 
+/*   FOOTER   */
+
+
 @media (width > 480px) {
   .about__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -773,6 +961,62 @@ nav {
     grid-column: 1/3;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .nav__links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+  .nav__links.open {
+    transform: translateX(0);
+  }
+  .nav__links li {
+    margin-bottom: 1rem;
+  }
+  .nav__links li a {
+    color: #000000;
+  }
+  .nav__links li a:hover {
+    color: #333333;
+  }
+  .about__container {
+    flex-direction: column;
+  }
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+  .bagan_utama {
+    flex-direction: column;
+  }
+  .bagan {
+    width: 100%;
+  }
+  .feature__grid {
+    grid-template-columns: 1fr;
+  }
+  .menu__items {
+    grid-template-columns: 1fr;
+  }
+  .menu__images {
+    grid-template-columns: 1fr;
+  }
+  .news__grid {
+    grid-template-columns: 1fr;
+  }
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+} 
 
 @media (width > 768px) {
   nav {

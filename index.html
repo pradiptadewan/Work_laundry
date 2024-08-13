@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +11,15 @@
     />
     <link rel="stylesheet" href="styles.css" />
 
+
     <title>Laundry On</title>
   </head>
+
+
   <body>
+
+    <!--   NAVBAR   -->
+
     <nav>
       <div class="nav__bar">
         <div class="nav__header">
@@ -26,130 +34,213 @@
         <ul class="nav__links" id="nav-links">
           <li><a href="#home">Beranda</a></li>
           <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#room">Paket Harga</a></li>
-          <li><a href="#menu">Outlet</a></li>
-          <li><a href="#menu">Layanan</a></li>
+          <li><a href="#harga">Paket Harga</a></li>
+          <li><a href="#layanan">Layanan</a></li>
+          <li><a href="#outlet">Outlet</a></li>
+          
 
           <div class="dropdown">
             <button class="dropdown-button">Kontak</button>
             <div class="dropdown-content">
                 <ul>
-                    <li><a href="#">WhatsApp</a></li>
-                    <li><a href="#">Instagram</a></li>
+                    <li><a href="https://wa.me/+628990551000">WhatsApp</a></li>
+                    <li><a href="https://www.instagram.com/gumngelondri?igsh=MXUyenp0YXl3MDZpeA==">Instagram</a></li>
                 </ul>
             </div>
-        </div>
-          
+          </div>
         </ul>
       </div>
     </nav>
+
+    <!--   END NAVBAR   -->
+
+
+
+    <!--   HOMEPAGE   -->
+
 
     <header class="header" id="home">
       <div class="section__container header__container">
         <p class="section__subheader">LAUNDRY ON</p>
         <h1>Laundry Express<br />Kiloan dan Satuan</h1>
-        <button class="btn">Pesan Sekarang</button>
+        <button class="btn"><a href="https://wa.me/+628990551000">Pesan Sekarang</a></button>
       </div>
     </header>
 
-<!--ABOUT US-->
-
-<section class="about" id="about">
-  <div class="section__container about__container">
-    <div class="about__grid">
-      <div class="about__image">
-        <img src="Asset/about2.jpg" alt="about" />
-      </div>
-      <div class="about__card">
-        <span><i class="ri-user-line"></i></span>
-        <h4>Tim Profesional</h4>
-        <p>
-          Tim kami berdedikasi untuk memberikan pelayanan laundry terbaik, memastikan setiap pakaian Anda ditangani dengan penuh perhatian dan profesionalisme.
-        </p>
-      </div>
-      <div class="about__image">
-        <img src="Asset/IMG_2894.JPG" alt="about" />
-      </div>
-      <div class="about__card">
-        <span><i class="ri-calendar-check-line"></i></span>
-        <h4>Layanan Fleksibel</h4>
-        <p>Kami menawarkan penjemputan dan pengantaran laundry yang cepat dan sesuai dengan jadwal Anda, memberikan kenyamanan tanpa kompromi.</p>
-      </div>
-    </div>
-
-    <div class="about__content">
-      <p class="section__subheader">TENTANG KAMI</p>
-      <h2 class="section__header">Laundry Express</h2>
-      <p class="section__description">
-        Selamat datang di Laundry On, layanan laundry antar jemput yang siap memudahkan hidup Anda. Kami mengutamakan kualitas pencucian dan kecepatan layanan, sehingga Anda bisa lebih fokus pada aktivitas penting lainnya. Dengan teknologi modern dan tim profesional, kami pastikan pakaian Anda selalu bersih, rapi, dan siap digunakan kembali.
-      </p>
-      <button class="btn__about">Pesan Sekarang</button>
-    </div>
-  </div>
-</section>
+    <!--   END HOMEPAGE   -->
 
 
-<!--PAKET HARGA -->
+    <!--   ABOUT US   -->
 
-    <section class="room__container" id="room">
-      <p class="section__subheader">DAFTAR</p>
-      <h2 class="section__header">Paket Harga Layanan</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <img src="Asset/K1.jpg" alt="room" />
-          <div class="room__card__details">
-            <div>
-              <h4>Deluxe Suite</h4>
-              <p>Well-appointed rooms designed for guests who desire a more.</p>
-            </div>
-            <h3>$399<span>/night</span></h3>
+    <section class="about" id="about">
+      <div class="section__container about__container">
+        <div class="about__grid">
+          <div class="about__image">
+            <img src="Asset/about2.jpg" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-user-line"></i></span>
+            <h4>Tim Profesional</h4>
+            <p>
+              Tim kami berdedikasi untuk memberikan pelayanan laundry terbaik, memastikan setiap pakaian Anda ditangani dengan penuh perhatian dan profesionalisme.
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="Asset/IMG_2894.JPG" alt="about" />
+          </div>
+          <div class="about__card">
+            <span><i class="ri-calendar-check-line"></i></span>
+            <h4>Mesin Canggih</h4>
+            <p>
+              "Laundry kami menggunakan mesin-mesin canggih untuk kebersihan maksimal. Setiap pakaian diperlakukan dengan hati-hati untuk memastikan hasil yang maksimal dan dijamin bersih, rapi, dan siap pakai."
+            </p>
           </div>
         </div>
-        <div class="room__card">
-          <img src="Asset/K2.jpg" alt="room" />
-          <div class="room__card__details">
-            <div>
-              <h4>Family Suite</h4>
-              <p>Consist of multiple rooms and a common living area.</p>
-            </div>
-            <h3>$599<span>/night</span></h3>
-          </div>
-        </div>
-        <div class="room__card">
-          <img src="Asset/K3.jpg" alt="room" />
-          <div class="room__card__details">
-            <div>
-              <h4>Luxury Penthouse</h4>
-              <p>
-                Top-tier accommodations usually on the highest floors of a
-                hotel.
-              </p>
-            </div>
-            <h3>$799<span>/night</span></h3>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="intro">
-      <div class="section__container intro__container">
-        <div class="intro__cotent">
-          <p class="section__subheader">VIDEO LAYANAN KAMI</p>
-          <h2 class="section__header">Laundry Antar Jemput Express</h2>
+        <div class="about__content">
+          <p class="section__subheader">TENTANG KAMI</p>
+          <h2 class="section__header">Laundry Express</h2>
           <p class="section__description">
-            Nikmati liburan Anda tanpa bingung mengurus cucian. Kami hadir dengan layanan laundry antar jemput yang praktis. Pakaian Anda akan kami ambil, cuci dengan hati-hati, dan antar kembali dalam kondisi bersih dan segar. Pesan sekarang untuk kenyamanan ekstra selama liburan!
+            LaundryON Antar Jemput merupakan salah satu laundry profesional di Jogja dengan gratis ongkir pengambilan sampai pengantaran. Sudah lebih dari 3 tahun dan dipercaya banyak customer baik dari rumah tangga, kost, perumahan elite, dan hotel-hotel berbintang maupun instansi / UMKM di Kota Jogja. Layanan antar jemput laundry sangat kami prioritaskan kepuasan pelanggan, terdapat juga layanan di outlet meliputi cuci kering mandiri / self service, cuci drop off, cuci lipat, cuci satuan.
           </p>
-          <button class="btn_vid">Pesan Sekarang</button>
-        </div>
-        <div class="intro__video">
-          <video src="Asset/vid.mp4" autoplay muted loop></video>
+          <button class="btn__about"><a href="https://wa.me/+628990551000">Pesan Sekarang</a></button>
         </div>
       </div>
     </section>
 
-<!--LAYANAN KAMI-->
+    <!--   END ABOUT US   -->
 
-    <section class="section__container feature__container" id="feature">
+
+
+    <!--   PAKET HARGA   -->
+
+
+      <section class="cont_utama" id="harga">
+
+        <p class="p_utm">DAFTAR</p>
+        <h2 class="h_utm">Paket Harga</h2>
+
+      <div class="bagan_utama">  
+
+      <!-- Container Pertama -->
+      <div class="bagan container">
+          <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+              <img src="Asset/K1.jpg" style="width:100%" alt="Paket 1">
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+              <img src="Asset/K2.jpg" style="width:100%" alt="Paket 2">
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+              <img src="Asset/K3.jpg" style="width:100%" alt="Paket 3">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+
+          <div class="caption-bagan">
+              <p id="caption0"></p>
+          </div>
+
+          <div class="row">
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K1.jpg" style="width:100%" onclick="currentSlide(1, 0)" alt="Paket 1">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K2.jpg" style="width:100%" onclick="currentSlide(2, 0)" alt="Paket 2">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K3.jpg" style="width:100%" onclick="currentSlide(3, 0)" alt="Paket 3">
+              </div>
+          </div>
+      </div>
+
+      <!-- Container Kedua -->
+      <div class="bagan container">
+          <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+              <img src="Asset/K4.jpg" style="width:100%" alt="Paket 1">
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+              <img src="Asset/K5.jpg" style="width:100%" alt="Paket 2">
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+              <img src="Asset/K6.jpg" style="width:100%" alt="Paket 3">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+
+          <div class="caption-bagan">
+              <p id="caption1"></p>
+          </div>
+
+          <div class="row">
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K4.jpg" style="width:100%" onclick="currentSlide(1, 1)" alt="Paket 4">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K5.jpg" style="width:100%" onclick="currentSlide(2, 1)" alt="Paket 5">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K6.jpg" style="width:100%" onclick="currentSlide(3, 1)" alt="Paket 6">
+              </div>
+          </div>
+      </div>
+
+      <!-- Container Ketiga -->
+      <div class="bagan container">
+          <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+              <img src="Asset/K1.jpg" style="width:100%" alt="Paket 1">
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">2 / 3</div>
+              <img src="Asset/K2.jpg" style="width:100%" alt="Paket 2">
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">3 / 3</div>
+              <img src="Asset/K3.jpg" style="width:100%" alt="Paket 3">
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+          <div class="caption-bagan">
+              <p id="caption2"></p>
+          </div>
+
+          <div class="row">
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K1.jpg" style="width:100%" onclick="currentSlide(1, 2)" alt="Paket 1">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K2.jpg" style="width:100%" onclick="currentSlide(2, 2)" alt="Paket 2">
+              </div>
+              <div class="column">
+                  <img class="demo cursor" src="Asset/K3.jpg" style="width:100%" onclick="currentSlide(3, 2)" alt="Paket 3">
+              </div>
+          </div>
+      </div>
+      </div>
+      </section>
+
+    <!--   END PAKET HARGA   -->
+
+
+    <!--   LAYANAN KAMI   -->
+
+    <section class="section__container feature__container" id="layanan">
       <p class="section__subheader">LAYANAN</p>
       <h2 class="section__header">Layanan Kami</h2>
       <div class="feature__grid">
@@ -204,9 +295,35 @@
       </div>
     </section>
 
-<!--OUTLET-->
+    <!--   END LAYANAN KAMI   -->
 
-    <section class="menu" id="menu">
+
+    <!--   VIDEO   -->
+
+    <section class="intro">
+      <div class="section__container intro__container">
+        <div class="intro__cotent">
+          <p class="section__subheader">VIDEO LAYANAN KAMI</p>
+          <h2 class="section__header">Laundry Antar Jemput Express</h2>
+          <p class="section__description">
+            Nikmati liburan Anda tanpa bingung mengurus cucian. Kami hadir dengan layanan laundry antar jemput yang praktis. Pakaian Anda akan kami ambil, cuci dengan hati-hati, dan antar kembali dalam kondisi bersih dan segar. Pesan sekarang untuk kenyamanan ekstra selama liburan!
+          </p>
+          <button class="btn_vid"><a href="https://wa.me/+628990551000">Pesan Sekarang</a></button>
+        </div>
+        <div class="intro__video">
+          <video src="Asset/vid.mp4" autoplay muted loop></video>
+        </div>
+      </div>
+    </section>
+
+    <!--   END VIDEO   -->
+
+
+
+
+    <!--   OUTLET   -->
+
+    <section class="menu" id="outlet">
       <div class="section__container menu__container">
         <div class="menu__header">
           <div>
@@ -283,129 +400,145 @@
         </div>
 
         <div class="maps">
-
+KOSONG
         </div>
       </div>
     </section>
+
+    <!--   END OUTLET   -->
+
+
+
+    <!--   RATING   -->
 
     <section class="section__container news__container" id="news">
       <div class="news__header">
         <div>
           <p class="section__subheader">RATING</p>
-          <h2 class="section__header">Ulasan Pelanggan </h2>
+          <h2 class="section__header">Ulasan Pelanggan</h2>
         </div>
       </div>
       <div class="news__grid">
         <div class="news__card">
           <img src="Asset/U1.jpg" alt="news" />
           <div class="news__card__title">
-            <p>25th March 2022</p>
-            <p>By Emily</p>
+            <p>15 Juli 2024</p>
+            <p>By Dika</p>
           </div>
-          <h4>Exploring Local Culinary Gems: A Foodie's Guide.</h4>
+          <h4>Pelayanan nya bagus, hasil rapi!</h4>
           <p>
-            Join Emily as she takes you on a gastronomic adventure through the
-            neighborhood surrounding our hotel.
+            Mbak mbaknya ramah, cepet reguler dua pilihan estimasi 1hari jadi sama 2 hari jadi gak usah nunggu lama, mau hemat ambil layanan mandiri 75 menit jadi harga murce.
           </p>
         </div>
         <div class="news__card">
           <img src="Asset/U2.jpg" alt="news" />
           <div class="news__card__title">
-            <p>15th June 2022</p>
-            <p>By David</p>
+            <p>20 Februari 2024</p>
+            <p>By Rasya </p>
           </div>
-          <h4>Balancing Mind, Body, and Soul at Our Hotel.</h4>
+          <h4>Tempat nyaman, karyawan ramah!</h4>
           <p>
-            Discover holistic spa treatments, fitness facilities, and
-            mindfulness practices that will leave you feeling refreshed.
+            Pelayanan nya sangat baik dan yang bikin saya puas adalah hasilnya sangat memuaskan bersih, tapi wangi. Sukses terus buat laundry-an nya!
           </p>
         </div>
         <div class="news__card">
           <img src="Asset/U3.jpg" alt="news" />
           <div class="news__card__title">
-            <p>08th August 2022</p>
-            <p>By Sarah</p>
+            <p>12 Februari 2024</p>
+            <p>By Sigit </p>
           </div>
-          <h4>Exploring Outdoor Activities Near Our Hotel.</h4>
+          <h4>Tempatnya besar, bersih dan nyaman!</h4>
           <p>
-            From hiking and biking trails to water sports and wildlife
-            encounters, she highlights ways to experience nature's wonders.
+            Pelayanan sangat baik dan ramah... Hasilnya memuaskan bersih, tapi wangi
           </p>
         </div>
       </div>
     </section>
 
+    <!--   END RATING   -->
+
+
+    <!--   FOOTER   -->
+
+
+
     <footer class="footer">
       <div class="section__container footer__container">
         <div class="footer__col">
           <div class="logo footer__logo">
-            <div>H</div>
-            <span>HOTEL<br />MIRANDA</span>
+            <div>L</div>
+            <span>Laundry<br />On</span>
           </div>
           <p class="section__description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
-            laudantium unde. Doloremque eaque debitis laborum labore voluptates
-            iste molestiae consectetur.
+            Laundry On Antar Jemput adalah solusi praktis untuk kebutuhan laundry Anda. 
+            Kami menawarkan layanan cuci kiloan dan satuan dengan kualitas terbaik dan harga yang terjangkau.
+            Percayakan pakaian Anda kepada kami!
           </p>
           <ul class="footer__socials">
             <li>
-              <a href="#"><i class="ri-youtube-fill"></i></a>
+              <a href="https://wa.me/+628990551000"><i class="ri-whatsapp-fill"></i></a> 
             </li>
             <li>
-              <a href="#"><i class="ri-instagram-line"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-linkedin-fill"></i></a>
+              <a href="https://www.instagram.com/gumngelondri?igsh=MXUyenp0YXl3MDZpeA=="><i class="ri-instagram-line"></i></a> 
             </li>
           </ul>
         </div>
         <div class="footer__col">
-          <h4>Services</h4>
+          <h4>Layanan</h4>
           <div class="footer__links">
-            <li><a href="#">Online Booking</a></li>
-            <li><a href="#">Room Customization</a></li>
-            <li><a href="#">Virtual Tours</a></li>
-            <li><a href="#">Special Offers</a></li>
-            <li><a href="#">Concierge Services</a></li>
-            <li><a href="#">Customer Support</a></li>
+            <li><a href="#">Cuci Kiloan</a></li>
+            <li><a href="#">Cuci Satuan</a></li>
+            <li><a href="#">Cuci Kering</a></li>
+            <li><a href="#">Antar Jemput</a></li>
+            <li><a href="#">Paket Hemat</a></li>
           </div>
         </div>
         <div class="footer__col">
-          <h4>Contact Us</h4>
+          <h4>Kontak Kami</h4>
           <div class="footer__links">
             <li>
               <span><i class="ri-phone-fill"></i></span>
               <div>
-                <h5>Phone Number</h5>
-                <p>+91 9876543210</p>
+                <h5>Telepon</h5>
+                <p>+62 899 055 1000</p>
               </div>
             </li>
             <li>
               <span><i class="ri-record-mail-line"></i></span>
               <div>
                 <h5>Email</h5>
-                <p>info@hotelmiranda.com</p>
+                <p>laundryon@email.com</p>
               </div>
             </li>
             <li>
               <span><i class="ri-map-pin-2-fill"></i></span>
               <div>
-                <h5>Location</h5>
-                <p>First St. NYC</p>
+                <h5>Lokasi</h5>
+                <p>Jl. [Alamat Laundry], Kota [Kota]</p>
               </div>
             </li>
           </div>
         </div>
       </div>
       <div class="footer__bar">
-        Copyright © 2023 Web Design Mastery. All rights reserved.
+        Copyright © 2023 Laundry On. All rights reserved.
       </div>
     </footer>
 
+    <!--   END FOOTER   -->
+
+    <!--   BUTTON ATAS   -->
+
+        <button class="back-to-top">
+          <i class="ri-arrow-up-double-fill"></i>
+        </button>
+        
+    <!--   END BUTTON ATAS   -->
+
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="script.js"></script>
+
+
   </body>
-</html>
+</html> 
