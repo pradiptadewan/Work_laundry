@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
 
+
+
+
+body{
+  background-color: #02C5Fb;
+}
+
+
+
 :root {
   --primary-color: #0f1a2c;
   --secondary-color: #f6ac0f;
@@ -181,6 +190,10 @@
     width: 100px;
 }
 
+.logo__judul img{
+  border-radius: 50%;
+}
+
 .logo div {
   padding-inline: 12px;
   font-size: 2rem;
@@ -229,7 +242,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--extra-light);
+  background-color: #00AEF7;
 }
 
 .nav__menu__btn {
@@ -268,15 +281,7 @@ nav {
 }
 
 .header {
-  padding-block: 5rem;
-  background-image: linear-gradient(
-      rgba(15, 26, 44, 0.5),
-      rgba(15, 26, 44, 0.5)
-    ),
-    url("Asset/bg1.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+background-color: #008BF0;
 }
 
 .header__container .section__subheader {
@@ -963,6 +968,7 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+
   .nav__links {
     position: fixed;
     top: 0;
@@ -1022,11 +1028,7 @@ nav {
   nav {
     position: static;
     padding-inline: 1rem;
-    background-image: linear-gradient(
-        rgba(15, 26, 44, 0.5),
-        rgba(15, 26, 44, 0.5)
-      ),
-      url("Asset/bg1.jpg");
+    background-color: #008BF0;
   }
 
   .nav__bar {
@@ -1036,7 +1038,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--primary-color);
+    background-color: #015DEC;
     border-radius: 5px;
     transform: translateY(50%);
   }
