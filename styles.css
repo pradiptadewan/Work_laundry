@@ -1,26 +1,110 @@
+/* 
+  File style.css
+*/
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
-
-
-
-
-body{
-  background-color: #02C5Fb;
-}
-
-
 
 :root {
   --primary-color: #0f1a2c;
   --secondary-color: #f6ac0f;
   --text-dark: #0f172a;
   --text-light: #64748b;
-  --extra-light: #f8fafc;
-  --white: #ffffff;
+  --extra-light: #e3e3e3;
+  --white: #f5eeee;
   --max-width: 1200px;
   --header-font: "Playfair Display", serif;
 }
 
+/* OUTLET */
+/* ... CSS lainnya ... */
 
+/* ... kode CSS lainnya ... */
+
+.outlet-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dua kolom */
+  gap: 20px;
+}
+
+.outlet-item {
+  position: relative; /* Untuk posisi tombol navigasi */
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  width: 100%; /* Atur lebar sesuai dengan outlet-item */
+  height: 400px; /* Sesuaikan tinggi sesuai kebutuhan */
+  overflow: hidden; /* Menyembunyikan overflow gambar */
+}
+
+.mySlides {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Atur lebar sesuai dengan outlet-item */
+  height: 100%;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fade {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+.next {
+  right: 15px;
+  border-radius: 5px 0 0 5px;
+}
+
+.prev {
+  left: 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+/* ... kode CSS lainnya ... */
+/* ... CSS lainnya ... */
+
+
+/* --- Dropdown --- */
 .dropdown-content.show {
   display: block;
 }
@@ -45,7 +129,7 @@ body{
   position: absolute;
   background-color: white;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 4px;
   overflow: hidden;
@@ -57,11 +141,13 @@ body{
 .dropdown-content ul {
   list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 .dropdown-content ul li {
-  padding: 8px 16px;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: var(--text-dark);
 }
 
 .dropdown-content ul li a {
@@ -82,13 +168,14 @@ body{
   background-color: var(--extra-light);
 }
 
-
+/* --- Reset --- */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* --- Section Container --- */
 .section__container {
   max-width: var(--max-width);
   margin: auto;
@@ -97,9 +184,11 @@ body{
 
 .section__subheader {
   margin-bottom: 0.5rem;
+  margin-left: 3px;
   font-size: 1rem;
   font-weight: 500;
   color: var(--primary-color);
+  font-family:var(--header-font) ;
 }
 
 .section__header {
@@ -114,6 +203,7 @@ body{
   color: var(--text-light);
 }
 
+/* --- Button --- */
 .btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -125,7 +215,7 @@ body{
   cursor: pointer;
 }
 
-.btn a{
+.btn a {
   list-style: none;
   text-decoration: none;
   color: inherit;
@@ -136,7 +226,7 @@ body{
   text-decoration: none;
 }
 
-.btn_vid{
+.btn_vid {
   padding: 0.75rem 2rem;
   font-size: 1rem;
   color: var(--white);
@@ -147,7 +237,7 @@ body{
   cursor: pointer;
 }
 
-.btn__about{
+.btn__about {
   padding: 0.75rem 2rem;
   font-size: 1rem;
   color: var(--white);
@@ -155,26 +245,27 @@ body{
   outline: none;
   border: none;
   border-radius: 5px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
-.btn__about:hover{
+.btn__about:hover {
   background-color: var(--secondary-color);
-  color: var(--primary-color); 
+  color: var(--primary-color);
 }
 
-.btn_vid:hover{
-    background-color: white;
-    color: var(--primary-color);
+.btn_vid:hover {
+  background-color: white;
+  color: var(--primary-color);
 }
 
-.btn:hover{
-    background-color: white;
-    color: var(--primary-color);
+.btn:hover {
+  background-color: white;
+  color: var(--primary-color);
 }
 
-.nav__logo span{
-    color: white;
+/* --- Logo --- */
+.nav__logo span {
+  color: white;
 }
 
 .logo {
@@ -186,11 +277,11 @@ body{
   letter-spacing: 2px;
 }
 
-.logo__judul{
-    width: 100px;
+.logo__judul {
+  width: 100px;
 }
 
-.logo__judul img{
+.logo__judul img {
   border-radius: 50%;
 }
 
@@ -199,31 +290,36 @@ body{
   font-size: 2rem;
 }
 
+/* --- Responsive Images & Videos --- */
 img,
 video {
   width: 100%;
   display: flex;
 }
 
+/* --- Links --- */
 a {
   text-decoration: none;
   color: inherit;
 }
 
-a:visited{
+a:visited {
   color: inherit;
   text-decoration: none;
 }
 
+/* --- Scroll Behaviour --- */
 html,
 body {
   scroll-behavior: smooth;
 }
 
+/* --- Body --- */
 body {
   font-family: "Poppins", sans-serif;
 }
 
+/* --- Navigation --- */
 nav {
   position: fixed;
   isolation: isolate;
@@ -242,7 +338,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #00AEF7;
+  background-color:#d3ac10;
 }
 
 .nav__menu__btn {
@@ -271,7 +367,7 @@ nav {
 }
 
 .nav__links a {
-  color:white;
+  color: white;
   transition: 0.3s;
 }
 
@@ -280,8 +376,13 @@ nav {
   color: var(--secondary-color);
 }
 
+/* --- Header --- */
+/* --- Header --- */
 .header {
-background-color: #008BF0;
+  background-image: url("Asset/bg1.jpg");
+  background-size: cover;
+  background-position: bottom; 
+  background-color: rgba(0, 0, 0, 0.5); 
 }
 
 .header__container .section__subheader {
@@ -297,6 +398,7 @@ background-color: #008BF0;
   color: var(--white);
 }
 
+/* --- Booking --- */
 .booking {
   background-color: var(--primary-color);
 }
@@ -334,9 +436,11 @@ background-color: #008BF0;
   color: var(--text-light);
 }
 
+/* --- About --- */
 .about {
   position: relative;
   isolation: isolate;
+  background-color: var(--extra-light);
 }
 
 .about::before {
@@ -409,6 +513,7 @@ background-color: #008BF0;
   margin-bottom: 2rem;
 }
 
+/* --- Room --- */
 .room__container {
   padding-block: 5rem;
 }
@@ -465,6 +570,7 @@ background-color: #008BF0;
   font-size: 0.8rem;
 }
 
+/* --- Intro --- */
 .intro {
   position: relative;
   isolation: isolate;
@@ -501,6 +607,7 @@ background-color: #008BF0;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* --- Feature --- */
 .feature__container :is(.section__subheader, .section__header) {
   text-align: center;
 }
@@ -530,31 +637,28 @@ background-color: #008BF0;
   color: var(--text-light);
 }
 
-
-/*   CSSS PAKET HARGA    */
-/* PAKET HARGA */
-
-.cont_utama{
+/* ---  Paket Harga --- */
+/* Bagian Paket Harga */
+.cont_utama {
   background-color: var(--extra-light);
+  padding: 40px 0;
 }
 
-.p_utm{
+.p_utm {
   margin-bottom: 0.5rem;
-  font-size: 1rem; 
+  font-size: 1rem;
   font-weight: 500;
   color: var(--primary-color);
   text-align: center;
-  padding-top: 40px;
 }
 
-.h_utm{
+.h_utm {
   font-size: 3rem;
   font-weight: 800;
   font-family: var(--header-font);
   color: var(--text-dark);
   text-align: center;
 }
-
 
 .bagan_utama {
   display: flex;
@@ -571,26 +675,20 @@ background-color: #008BF0;
   border-radius: 10px;
   position: relative;
   width: 30%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Efek bayangan */
-  
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .mySlides {
   display: none;
+  position: relative; /* Untuk memposisikan harga */
 }
 
 .mySlides img {
   width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  /* Tambahkan efek bayangan pada gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .prev,
@@ -638,32 +736,32 @@ background-color: #008BF0;
   font-weight: 600;
 }
 
-.row {
-  column-count: 3;
-  column-gap: 10px;
+/* Gaya untuk judul paket */
+.paket-judul {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
-.column {
-  break-inside: avoid-column;
+.paket-judul h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
 }
 
-.demo {
-  opacity: 0.6;
-  cursor: pointer;
-  height: auto;
-  margin: 5px;
-  width: 100%;
-  border-radius: 10px;
-  transition: opacity 0.3s ease;
+/* Gaya untuk harga */
+.harga {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
 
-/* CSS PAKET HARGA */
-
+/* ---  Menu --- */
 .menu {
   background-color: var(--extra-light);
 }
@@ -753,6 +851,7 @@ background-color: #008BF0;
   color: var(--text-light);
 }
 
+/* --- News --- */
 .news__header {
   display: flex;
   flex-direction: column;
@@ -795,26 +894,25 @@ background-color: #008BF0;
   color: var(--text-light);
 }
 
-/*   PANAH ATAS   */
-
+/* --- Back to Top --- */
 .back-to-top {
   position: fixed;
-  bottom: 20px; 
-  right: 20px; 
+  bottom: 20px;
+  right: 20px;
   display: none;
   background-color: var(--primary-color);
-  color: var(--secondary-color); 
+  color: var(--secondary-color);
   border: none;
-  border-radius: 50%; 
+  border-radius: 50%;
   width: 50px;
   height: 50px;
   cursor: pointer;
-  transition: all 0.3s ease; 
-  z-index: 100; 
+  transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .back-to-top:hover {
-  background-color: var(--secondary-color); 
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
@@ -823,11 +921,7 @@ background-color: #008BF0;
   line-height: 40px;
 }
 
-/*   END PANAH ATAS   */
-
-
-/*   FOOTER   */
-
+/* --- Footer --- */
 .footer {
   background-color: var(--primary-color);
 }
@@ -925,8 +1019,209 @@ background-color: #008BF0;
   text-align: center;
 }
 
-/*   FOOTER   */
+/* --- Media Queries --- */
+@media only screen and (max-width: 768px) {
 
+  .bagan_utama {
+    flex-direction: column; /* Tampilkan paket harga secara vertikal */
+  }
+
+  .bagan {
+    width: 100%; /* Lebar paket harga menjadi 100% */
+  }
+
+
+  body {
+    font-size: 14px;
+  }
+
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.2em;
+  }
+
+  .logo__judul img{
+    width: 50px;
+  }
+
+  .text_logo{
+    margin-left: -25px;
+    font-size: 0.8rem;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .section__subheader{
+    font-size: 0.9rem;
+    margin-top: 55px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .dropdown-button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .dropdown-content {
+    min-width: 120px;
+  }
+
+  .section__container {
+    padding: 3rem 1rem;
+  }
+
+  .section__header {
+    font-size: 2rem;
+  }
+
+
+  .nav__links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem;
+    z-index: 100;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav__links.open {
+    transform: translateX(0);
+  }
+
+  .nav__links li {
+    margin-bottom: 1rem;
+  }
+
+  .nav__links li a {
+    color: #000000;
+  }
+
+  .nav__links li a:hover {
+    color: #333333;
+  }
+
+  .nav__menu__btn {
+    display: block;
+  }
+
+  .header {
+    padding-bottom: 2rem;
+  }
+
+  .header__container h1 {
+    padding-top: 15px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .booking__container form {
+    grid-template-columns: 1fr;
+  }
+
+  .about__container {
+    flex-direction: column;
+  }
+
+  .about__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about__image:nth-child(1) {
+    grid-area: 1/1/2/2;
+  }
+
+  .about__image:nth-child(1),
+  .about__card:nth-child(4) {
+    transform: translateY(0);
+  }
+
+  .room__container :is(.section__subheader, .section__header) {
+    padding-inline: 0;
+  }
+
+  .room__grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .room__card__details {
+    transform: translateY(0);
+  }
+
+  .intro__container {
+    flex-direction: column;
+  }
+
+  .intro__video {
+    max-width: 100%;
+  }
+
+  .feature__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .menu__header {
+    flex-direction: column;
+  }
+
+  .menu__items {
+    grid-template-columns: 1fr;
+  }
+
+  .menu__images {
+    grid-template-columns: 1fr;
+  }
+
+  .menu__banner {
+    grid-template-columns: 1fr;
+  }
+
+  .news__header {
+    flex-direction: column;
+  }
+
+  .news__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bagan_utama {
+    flex-direction: column;
+  }
+
+  .bagan {
+    width: 100%;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__col:first-child {
+    grid-column: unset;
+  }
+
+  .footer__col {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}
 
 @media (width > 480px) {
   .about__grid {
@@ -967,68 +1262,11 @@ background-color: #008BF0;
   }
 }
 
-@media screen and (max-width: 768px) {
-
-  .nav__links {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #ffffff;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 2rem;
-    z-index: 100;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-  }
-  .nav__links.open {
-    transform: translateX(0);
-  }
-  .nav__links li {
-    margin-bottom: 1rem;
-  }
-  .nav__links li a {
-    color: #000000;
-  }
-  .nav__links li a:hover {
-    color: #333333;
-  }
-  .about__container {
-    flex-direction: column;
-  }
-  .about__grid {
-    grid-template-columns: 1fr;
-  }
-  .bagan_utama {
-    flex-direction: column;
-  }
-  .bagan {
-    width: 100%;
-  }
-  .feature__grid {
-    grid-template-columns: 1fr;
-  }
-  .menu__items {
-    grid-template-columns: 1fr;
-  }
-  .menu__images {
-    grid-template-columns: 1fr;
-  }
-  .news__grid {
-    grid-template-columns: 1fr;
-  }
-  .footer__container {
-    grid-template-columns: 1fr;
-  }
-} 
-
 @media (width > 768px) {
   nav {
     position: static;
     padding-inline: 1rem;
-    background-color: #008BF0;
+    background-color: #F9C700;
   }
 
   .nav__bar {
@@ -1038,7 +1276,7 @@ background-color: #008BF0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #015DEC;
+    background-color: #0f1a2c;
     border-radius: 5px;
     transform: translateY(50%);
   }

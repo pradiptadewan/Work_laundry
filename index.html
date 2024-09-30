@@ -25,7 +25,7 @@
         <div class="nav__header">
           <div class="logo nav__logo">
             <div class="logo__judul"><img src="Asset/logo2.jpg" alt=""></div>
-            <span>Laundry ON<br />Express</span>
+            <span class="text_logo">Laundry ON<br />Express</span>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
@@ -118,252 +118,63 @@
 
     <!--   PAKET HARGA   -->
 
-
-      <section class="cont_utama" id="harga">
-
-        <p class="p_utm">DAFTAR</p>
-        <h2 class="h_utm">Paket Harga Setrika</h2>
-
-      <div class="bagan_utama">  
-
-      <!-- Container Pertama -->
-      <div class="bagan container">
-          <div class="mySlides">
-              <div class="numbertext">1 / 3</div>
-              <img src="Asset/K1.jpg" style="width:100%" alt="Paket 1">
+    <section class="cont_utama">
+      <div class="section__container">
+        <p class="p_utm">Paket Harga</p>
+        <h2 class="h_utm">Pilih Paket yang Sesuai Kebutuhan Anda</h2>
+        <div class="bagan_utama">
+          <div class="bagan container">
+            <div class="paket-judul">
+              <h3>Paket Setrika</h3>
+            </div>
+            <div class="mySlides">
+              <img src="Asset/K1.jpg" alt="Gambar Paket 1">
+              <div class="harga">Rp. 100.000</div>
+            </div>
+            <div class="mySlides">
+              <img src="Asset/K2.jpg" alt="Gambar Paket 1">
+              <div class="harga">Rp. 150.000</div>
+            </div>
+            <div class="mySlides">
+              <img src="Asset/K3.jpg" alt="Gambar Paket 1">
+              <div class="harga">Rp. 200.000</div>
+            </div>
+            <!-- Tombol untuk mengontrol slide -->
+            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+            <div class="caption-bagan">
+              <p id="hargaPaket1">Rp. 100.000</p>
+              <button class="btn">Pilih Paket</button>
+            </div>
           </div>
-
-          <div class="mySlides">
-              <div class="numbertext">2 / 3</div>
-              <img src="Asset/K2.jpg" style="width:100%" alt="Paket 2">
+          <div class="bagan container">
+            <div class="paket-judul">
+              <h3>Paket Lipat</h3>
+            </div>
+            <div class="mySlides">
+              <img src="Asset/K4.jpg" alt="Gambar Paket 2">
+              <div class="harga">Rp. 250.000</div>
+            </div>
+            <div class="mySlides">
+              <img src="Asset/K5.jpg" alt="Gambar Paket 2">
+              <div class="harga">Rp. 300.000</div>
+            </div>
+            <div class="mySlides">
+              <img src="Asset/K6.jpg" alt="Gambar Paket 2">
+              <div class="harga">Rp. 350.000</div>
+            </div>
+            <!-- Tombol untuk mengontrol slide -->
+            <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+            <div class="caption-bagan">
+              <p id="hargaPaket2">Rp. 250.000</p>
+              <button class="btn">Pilih Paket</button>
+            </div>
           </div>
-
-          <div class="mySlides">
-              <div class="numbertext">3 / 3</div>
-              <img src="Asset/K3.jpg" style="width:100%" alt="Paket 3">
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-
-          <div class="caption-bagan">
-              <p id="caption0"></p>
-          </div>
-
-          <div class="row">
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K1.jpg" style="width:100%" onclick="currentSlide(1, 0)" alt="Paket 1">
-              </div>
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K2.jpg" style="width:100%" onclick="currentSlide(2, 0)" alt="Paket 2">
-              </div>
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K3.jpg" style="width:100%" onclick="currentSlide(3, 0)" alt="Paket 3">
-              </div>
-          </div>
+        </div>
       </div>
-
-      <!-- Container Kedua -->
-      <div class="bagan container">
-          <div class="mySlides">
-              <div class="numbertext">1 / 3</div>
-              <img src="Asset/K4.jpg" style="width:100%" alt="Paket 1">
-          </div>
-
-          <div class="mySlides">
-              <div class="numbertext">2 / 3</div>
-              <img src="Asset/K5.jpg" style="width:100%" alt="Paket 2">
-          </div>
-
-          <div class="mySlides">
-              <div class="numbertext">3 / 3</div>
-              <img src="Asset/K6.jpg" style="width:100%" alt="Paket 3">
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-
-          <div class="caption-bagan">
-              <p id="caption1"></p>
-          </div>
-
-          <div class="row">
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K4.jpg" style="width:100%" onclick="currentSlide(1, 1)" alt="Paket 4">
-              </div>
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K5.jpg" style="width:100%" onclick="currentSlide(2, 1)" alt="Paket 5">
-              </div>
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K6.jpg" style="width:100%" onclick="currentSlide(3, 1)" alt="Paket 6">
-              </div>
-          </div>
-      </div>
-
-      <!-- Container Ketiga -->
-      <div class="bagan container">
-          <div class="mySlides">
-              <div class="numbertext">1 / 3</div>
-              <img src="Asset/K1.jpg" style="width:100%" alt="Paket 1">
-          </div>
-
-          <div class="mySlides">
-              <div class="numbertext">2 / 3</div>
-              <img src="Asset/K2.jpg" style="width:100%" alt="Paket 2">
-          </div>
-
-          <div class="mySlides">
-              <div class="numbertext">3 / 3</div>
-              <img src="Asset/K3.jpg" style="width:100%" alt="Paket 3">
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-
-          <div class="caption-bagan">
-              <p id="caption2"></p>
-          </div>
-
-          <div class="row">
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K1.jpg" style="width:100%" onclick="currentSlide(1, 2)" alt="Paket 1">
-              </div>
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K2.jpg" style="width:100%" onclick="currentSlide(2, 2)" alt="Paket 2">
-              </div>
-              <div class="column">
-                  <img class="demo cursor" src="Asset/K3.jpg" style="width:100%" onclick="currentSlide(3, 2)" alt="Paket 3">
-              </div>
-          </div>
-      </div>
-      </div>
-      </section>
-
-    <!--   END PAKET HARGA   -->
-
-    <!--   PAKET HARGA   -->
-
-
-    <section class="cont_utama" id="harga">
-
-      <p class="p_utm">DAFTAR</p>
-      <h2 class="h_utm">Paket Harga Lipat</h2>
-
-    <div class="bagan_utama">  
-
-    <!-- Container Pertama -->
-    <div class="bagan container">
-        <div class="mySlides">
-            <div class="numbertext">1 / 3</div>
-            <img src="Asset/K1.jpg" style="width:100%" alt="Paket 1">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">2 / 3</div>
-            <img src="Asset/K2.jpg" style="width:100%" alt="Paket 2">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">3 / 3</div>
-            <img src="Asset/K3.jpg" style="width:100%" alt="Paket 3">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
-
-        <div class="caption-bagan">
-            <p id="caption0"></p>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="Asset/K1.jpg" style="width:100%" onclick="currentSlide(1, 0)" alt="Paket 1">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Asset/K2.jpg" style="width:100%" onclick="currentSlide(2, 0)" alt="Paket 2">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Asset/K3.jpg" style="width:100%" onclick="currentSlide(3, 0)" alt="Paket 3">
-            </div>
-        </div>
-    </div>
-
-    <!-- Container Kedua -->
-    <div class="bagan container">
-        <div class="mySlides">
-            <div class="numbertext">1 / 3</div>
-            <img src="Asset/K4.jpg" style="width:100%" alt="Paket 1">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">2 / 3</div>
-            <img src="Asset/K5.jpg" style="width:100%" alt="Paket 2">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">3 / 3</div>
-            <img src="Asset/K6.jpg" style="width:100%" alt="Paket 3">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
-
-        <div class="caption-bagan">
-            <p id="caption1"></p>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="Asset/K4.jpg" style="width:100%" onclick="currentSlide(1, 1)" alt="Paket 4">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Asset/K5.jpg" style="width:100%" onclick="currentSlide(2, 1)" alt="Paket 5">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Asset/K6.jpg" style="width:100%" onclick="currentSlide(3, 1)" alt="Paket 6">
-            </div>
-        </div>
-    </div>
-
-    <!-- Container Ketiga -->
-    <div class="bagan container">
-        <div class="mySlides">
-            <div class="numbertext">1 / 3</div>
-            <img src="Asset/K1.jpg" style="width:100%" alt="Paket 1">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">2 / 3</div>
-            <img src="Asset/K2.jpg" style="width:100%" alt="Paket 2">
-        </div>
-
-        <div class="mySlides">
-            <div class="numbertext">3 / 3</div>
-            <img src="Asset/K3.jpg" style="width:100%" alt="Paket 3">
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
-
-        <div class="caption-bagan">
-            <p id="caption2"></p>
-        </div>
-
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="Asset/K1.jpg" style="width:100%" onclick="currentSlide(1, 2)" alt="Paket 1">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Asset/K2.jpg" style="width:100%" onclick="currentSlide(2, 2)" alt="Paket 2">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="Asset/K3.jpg" style="width:100%" onclick="currentSlide(3, 2)" alt="Paket 3">
-            </div>
-        </div>
-    </div>
-    </div>
     </section>
-
+    
   <!--   END PAKET HARGA   -->
 
 
@@ -563,18 +374,7 @@
             </div>
           </li>
         </ul>
-        <div class="menu__images">
-          <img src="Asset/K7 (1).jpg" alt="menu" />
-          <img src="Asset/K8.jpg" alt="menu" />
-          <img src="Asset/K9.jpg" alt="menu" />
-        </div>
 
-        <div class="maps">
-
-          <h2 class="section__header">MAPS</h2>
-
-BELUM ADA ISINYA
-        </div>
       </div>
     </section>
 

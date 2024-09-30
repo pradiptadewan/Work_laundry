@@ -8,7 +8,7 @@ const dropdownButton = document.querySelector('.dropdown-button');
 const dropdownContent = document.querySelector('.dropdown-content');
 
 // Slideshow Logic
-let slideIndices = [1, 1, 1]; // Array to store slide indices for each container
+let slideIndices = [1, 1]; // Array to store slide indices for each container
 
 // Event Listeners
 menuBtn.addEventListener("click", toggleMenu);
@@ -67,8 +67,8 @@ function currentSlide(n, no) {
 function showSlides(n, no) {
   let i;
   let slides = document.querySelectorAll(`.container:nth-child(${no + 1}) .mySlides`);
-  let dots = document.querySelectorAll(`.container:nth-child(${no + 1}) .demo`);
-  let captionText = document.getElementById(`caption${no}`);
+  //let dots = document.querySelectorAll(`.container:nth-child(${no + 1}) .demo`);
+  let captionText = document.getElementById(`hargaPaket${no + 1}`);
 
   // Wrap around slide indices
   if (n > slides.length) { slideIndices[no] = 1 }
@@ -78,16 +78,16 @@ function showSlides(n, no) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  //for (i = 0; i < dots.length; i++) {
+  //  dots[i].className = dots[i].className.replace(" active", "");
+  //}
 
   // Show the current slide and add active class to the corresponding dot
   slides[slideIndices[no]-1].style.display = "block";
-  dots[slideIndices[no]-1].className += " active";
+  //dots[slideIndices[no]-1].className += " active";
 
   // Update caption if available
-  if(captionText) captionText.innerHTML = dots[slideIndices[no]-1].alt;
+  if(captionText) captionText.innerHTML = slides[slideIndices[no]-1].querySelector('.harga').textContent;
 }
 
 // Scroll Reveal Animation
@@ -134,7 +134,7 @@ ScrollReveal().reveal(".news__card", {
 document.addEventListener('DOMContentLoaded', () => {
   showSlides(1, 0);
   showSlides(1, 1);
-  showSlides(1, 2);
+  //showSlides(1, 2);
 
   // Tambahkan event listener untuk tombol "Pesan Sekarang"
   const pesanButton = document.querySelector('.btn');
@@ -201,3 +201,4 @@ backToTopButton.addEventListener('click', () => {
 });
 
 // ... kode lainnya ...
+
